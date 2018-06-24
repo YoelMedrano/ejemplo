@@ -1,18 +1,18 @@
 'use strict';
 
 // declare modules
-angular.module('Authentication', []);
+var Authentication = angular.module('Authentication', []);
 
 
-angular.module('angularRestfulAuth', [
+var angularRestfulAuth =angular.module('angularRestfulAuth', [
     'Authentication',
     'ngStorage',
     'ngRoute',
 'angular-loading-bar',
     'ngCookies'
-])
+]);
  
-.config(['$routeProvider', function ($routeProvider) {
+angularRestfulAuth.config(['$routeProvider', function ($routeProvider) {
 
     $routeProvider
         .when('/registration', {
